@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import environment from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherService {
 
-  private API_URL = 'e7ff82875069749883114dcdb2378434';
+  private API_URL = environment;
 
   constructor(private httpClient: HttpClient) { }
 
